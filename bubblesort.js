@@ -1,5 +1,4 @@
 function bubbleSort(array) {
-
   let counter = 0;
   let flag = false;
 
@@ -19,11 +18,8 @@ function bubbleSort(array) {
 }
 
 function swap(array, indexOne, indexTwo) {
-  console.log('>>>>>>> array>>>>>', array);
   let temp = array[indexOne];
   array[indexOne] = array[indexTwo];
   array[indexTwo] = temp;
   return array;
 }
-
-// module.exports = bubbleSort;
