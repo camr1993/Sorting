@@ -2,13 +2,6 @@ function bubbleSort(array) {
   let counter = 0;
   let flag = false;
 
-  function swap(OGArray, indexOne, indexTwo) {
-    let temp = OGArray[indexOne];
-    OGArray[indexOne] = OGArray[indexTwo];
-    OGArray[indexTwo] = temp;
-    return OGArray;
-  }
-
   while (!flag) {
     let initialCounter = counter;
     for (let i = 0; i < array.length; i++) {
@@ -21,5 +14,12 @@ function bubbleSort(array) {
       flag = true;
     }
   }
+  return array;
+}
+
+function swap(array, indexOne, indexTwo) {
+  let temp = array[indexOne];
+  array[indexOne] = array[indexTwo];
+  array[indexTwo] = temp;
   return array;
 }
